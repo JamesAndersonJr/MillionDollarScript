@@ -82,21 +82,21 @@ if ($_REQUEST[action]=='changepass') {
 
 ?>
 <form name="form1" method="post">
-	<table border="0">
+	<table style="border-width:0px;border-style:none;border-color:transparent;">
 		<tr>
-			<td colspan="2"><h3><?php echo $label['advertiser_edit_chpass']; ?></h3></td>
+			<td colspan="2"><h3><?php echo $label['advertiser_edit_chpass'];?></h3></td>
 		</tr>
 		<tr>
-			<td><?php echo $label['advertiser_edit_curpass']; ?></td><td><input type="password" name="oldpass"></td>
+			<td style="padding-bottom:4px;vertical-align:middle;width:140px;"><?php echo $label['advertiser_edit_curpass'];?></td><td style="padding-bottom:4px;vertical-align:middle;"><input type="password" name="oldpass" maxlength="25" style="width:160px;padding-top:2px !important;padding-right: 4px !important;padding-bottom:2px !important;padding-left:4px !important;"></td>
 		</tr>
 		<tr>
-			<td><?php echo $label['advertiser_edit_newpass']; ?></td><td><input type="password" name="password"></td>
+			<td style="padding-bottom:4px;vertical-align:middle;width:140px;"><?php echo $label['advertiser_edit_newpass'];?></td><td style="padding-bottom:4px;vertical-align:middle;"><input type="password" name="password" maxlength="25" style="width:160px;padding-top:2px !important;padding-right: 4px !important;padding-bottom:2px !important;padding-left:4px !important;"></td>
 		</tr>
 		<tr>
-			<td><?php echo $label['advertiser_edit_retypepass']; ?></td><td><input type="password" name="password2"></td>
+			<td style="padding-bottom:4px;vertical-align:middle;width:140px;"><?php echo $label['advertiser_edit_retypepass'];?></td><td style="padding-bottom:4px;vertical-align:middle;"><input type="password" name="password2" maxlength="25" style="width:160px;padding-top:2px !important;padding-right: 4px !important;padding-bottom:2px !important;padding-left:4px !important;"></td>
 		</tr>
 		<tr>
-			<td colspan="2"><input type="submit" value="<?php echo $label['advertiser_edit_changebutton']; ?>"></td>
+			<td colspan="2" style="padding-top:4px;"><input type="submit" value="<?php echo $label['advertiser_edit_changebutton']; ?>"></td>
 		</tr>
 	</table>
 	<input type="hidden" name="action" value="changepass">
@@ -130,24 +130,24 @@ $email = $row['Email'];
 
 ?>
 <form name="form2" method="post">
-	<table border="0">
+	<table style="border-width:0px;border-style:none;border-color:transparent;">
 		<tr>
-			<td colspan="2"><h3><?php echo $label['advertiser_edit_upd_personald']; ?></h3></td>
+			<td colspan="2"><h3><?php echo $label['advertiser_edit_upd_personald'];?></h3></td>
 		</tr>
 		<tr>
-			<td><?php echo $label['advertiser_edit_fname']; ?></td><td><input type="text" name="firstname" value="<?php echo htmlentities($firstname); ?>" ></td>
+			<td style="padding-bottom:4px;vertical-align:middle;width:140px;"><?php echo $label['advertiser_edit_fname'];?></td><td style="padding-bottom:4px;vertical-align:middle;"><input type="text" maxlength="40" name="firstname" value="<?php echo ($firstname); ?>" style="width:160px;padding-top:2px !important;padding-right: 4px !important;padding-bottom:2px !important;padding-left:4px !important;"></td>
 		</tr>
 		<tr>
-			<td><?php echo $label['advertiser_edit_lname']; ?></td><td><input type="text" name="lastname" value="<?php echo htmlentities($lastname); ?>"></td>
+			<td style="padding-bottom:4px;vertical-align:middle;width:140px;"><?php echo $label['advertiser_edit_lname']; ?></td><td style="padding-bottom:4px;vertical-align:middle;"><input type="text" maxlength="40" name="lastname" value="<?php echo htmlentities($lastname); ?>" style="width:160px;padding-top:2px !important;padding-right: 4px !important;padding-bottom:2px !important;padding-left:4px !important;"></td>
 		</tr>
 		<tr>
-			<td><?php echo $label['advertiser_edit_comp_n']; ?></td><td><input type="text" size="30" name="compname" value="<?php echo htmlentities($compname); ?>"></td>
+			<td style="padding-bottom:4px;vertical-align:middle;width:140px;"><?php echo $label['advertiser_edit_comp_n']; ?></td><td style="padding-bottom:4px;vertical-align:middle;"><input type="text" maxlength="50" name="compname" value="<?php echo htmlentities($compname); ?>" style="width:160px;padding-top:2px !important;padding-right: 4px !important;padding-bottom:2px !important;padding-left:4px !important;"></td>
 		</tr>
 		<tr>
-			<td><?php echo $label['advertiser_edit_email']; ?></td><td><input type="text" size="30" name="email" value="<?php echo htmlentities($email); ?>"></td>
+			<td style="padding-bottom:4px;vertical-align:middle;width:140px;"><?php echo $label['advertiser_edit_email']; ?></td><td style="padding-bottom:4px;vertical-align:middle;"><input type="text" maxlength="55" name="email" value="<?php echo htmlentities($email); ?>" style="width:160px;padding-top:2px !important;padding-right: 4px !important;padding-bottom:2px !important;padding-left:4px !important;"></td>
 		</tr>
 		<tr>
-			<td colspan="2"><input type="submit" value="<?php echo $label['advertiser_edit_savebutton']; ?>"></td>
+			<td colspan="2" style="padding-top:4px;"><input type="submit" value="<?php echo $label['advertiser_edit_savebutton']; ?>"></td>
 		</tr>
 	</table>
 	<input type="hidden" name="action" value="update">
